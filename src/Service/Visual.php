@@ -95,6 +95,42 @@ class Visual extends V4Curl
         return $response->getBody();
     }
 
+    public function EyeClose2Open(array $query = [])
+    {
+        $response = $this->request('EyeClose2Open', $query);
+        return $response->getBody();
+    }
+
+    public function EmoticonEdit(array $query = [])
+    {
+        $response = $this->request('EmoticonEdit', $query);
+        return $response->getBody();
+    }
+
+    public function StretchRecovery(array $query = [])
+    {
+        $response = $this->request('StretchRecovery', $query);
+        return $response->getBody();
+    }
+
+    public function DistortionFree(array $query = [])
+    {
+        $response = $this->request('DistortionFree', $query);
+        return $response->getBody();
+    }
+
+    public function ImageFlow(array $query = [])
+    {
+        $response = $this->request('ImageFlow', $query);
+        return $response->getBody();
+    }
+
+    public function OverResolution(array $query = [])
+    {
+        $response = $this->request('OverResolution', $query);
+        return $response->getBody();
+    }
+
     protected $apiList = [
         'JPCartoon' => [
             'url' => '/',
@@ -212,6 +248,66 @@ class Visual extends V4Curl
             'config' => [
                 'query' => [
                     'Action' => 'HairStyle',
+                    'Version' => '2020-08-26',
+                ],
+            ],
+        ],
+        'EyeClose2Open' => [
+            'url' => '/',
+            'method' => 'post',
+            'config' => [
+                'query' => [
+                    'Action' => 'EyeClose2Open',
+                    'Version' => '2020-08-26',
+                ],
+            ],
+        ],
+        'EmoticonEdit' => [
+            'url' => '/',
+            'method' => 'post',
+            'config' => [
+                'query' => [
+                    'Action' => 'EmoticonEdit',
+                    'Version' => '2020-08-26',
+                ],
+            ],
+        ],
+        'StretchRecovery' => [
+            'url' => '/',
+            'method' => 'post',
+            'config' => [
+                'query' => [
+                    'Action' => 'StretchRecovery',
+                    'Version' => '2020-08-26',
+                ],
+            ],
+        ],
+        'DistortionFree' => [
+            'url' => '/',
+            'method' => 'post',
+            'config' => [
+                'query' => [
+                    'Action' => 'DistortionFree',
+                    'Version' => '2020-08-26',
+                ],
+            ],
+        ],
+        'ImageFlow' => [
+            'url' => '/',
+            'method' => 'post',
+            'config' => [
+                'query' => [
+                    'Action' => 'ImageFlow',
+                    'Version' => '2020-08-26',
+                ],
+            ],
+        ],
+        'OverResolution' => [
+            'url' => '/',
+            'method' => 'post',
+            'config' => [
+                'query' => [
+                    'Action' => 'OverResolution',
                     'Version' => '2020-08-26',
                 ],
             ],
