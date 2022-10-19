@@ -47,9 +47,9 @@ class Visual extends V4Curl
         return $response->getBody();
     }
 
-    public function EnhancePhoto(array $query = [])
+    public function EnhancePhotoV2(array $query = [])
     {
-        $response = $this->request('EnhancePhoto', $query);
+        $response = $this->request('EnhancePhotoV2', $query);
         return $response->getBody();
     }
 
@@ -172,13 +172,13 @@ class Visual extends V4Curl
                 ],
             ],
         ],
-        'EnhancePhoto' => [
+        'EnhancePhotoV2' => [
             'url' => '/',
             'method' => 'post',
             'config' => [
                 'query' => [
-                    'Action' => 'EnhancePhoto',
-                    'Version' => '2020-08-26',
+                    'Action' => 'EnhancePhotoV2',
+                    'Version' => '2022-08-31',
                 ],
             ],
         ],
